@@ -15,14 +15,18 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col border-[#33353F] border rounded-lg p-4 text-sm mt-2">
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="font-bold">{title}</div>
         <div>{institution}</div>
       </div>
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-col md:flex-row justify-between">
         <div>{date}</div>
-        <div>{info ? info : ""}</div>
+        <div className="hidden md:flex">{info ? info : ""}</div>
       </div>
+      {/* <div className="flex flex-row justify-between md:hidden">
+        <div>TEST</div>
+        <div>TEST</div>
+      </div> */}
     </div>
   );
 };
