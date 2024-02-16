@@ -4,6 +4,7 @@ import TabButton from "./TabButton";
 import { ABOUT_TAB_DATA } from "../lib/constants";
 import ExperienceCard from "./ExperienceCard";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import SkillsSection from "./SkillsSection";
 
 const AboutSection = () => {
   const [activeTab, setActiveTab] = useState("work");
@@ -17,7 +18,7 @@ const AboutSection = () => {
 
   return (
     <section
-      className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 sm:mt-24"
+      className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 pb-4 xl:gap-16 sm:py-16 xl:px-16 mt-24 sm:min-h-[60vh] mb-10 sm:mb-0"
       id="about"
     >
       <div>
@@ -65,7 +66,10 @@ const AboutSection = () => {
             </TabButton>
           ))}
           <button>
-            <a href="https://justinclark.bio" className="mr-3 font-semibold text-slate-200 hover:text-white flex justify-center items-center">
+            <a
+              href="/assets/resume.pdf"
+              className="mr-3 font-semibold text-slate-200 hover:text-white flex justify-center items-center"
+            >
               <p>Resume</p>
               <ArrowUpRightIcon className="ml-1 h-5 w-5" />
             </a>
