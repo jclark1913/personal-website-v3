@@ -15,10 +15,10 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 sm:mt-24">
+    <section className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 sm:mt-24" id="about">
       <div>
         <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-        <div className="text-justify text-lg text-base md:text-xl">
+        <div className="text-justify text-base md:text-xl">
           <p className="mb-2 ">
             I'm a full stack software developer and technical consultant based
             in Michigan. Prior to moving back to my home state in 2022, I lived
@@ -49,7 +49,7 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-end mt-2">
+      <div className="flex flex-col items-center md:items-end mt-2">
         <div className="flex flex-row gap-3 items-start">
           {ABOUT_TAB_DATA.map((tab) => (
             <TabButton
@@ -61,14 +61,14 @@ const AboutSection = () => {
             </TabButton>
           ))}
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-5/6">
           {isPending ? (
             <div className="text-white">Loading...</div>
           ) : (
-            <div>
+            <div className="w-full">
               {ABOUT_TAB_DATA.filter((tab) => tab.id === activeTab).map(
                 (tab) => (
-                  <div key={tab.id}>
+                  <div className="w-full" key={tab.id}>
                     {tab.content.map((c) => (
                       <ExperienceCard
                         title={c.title}
