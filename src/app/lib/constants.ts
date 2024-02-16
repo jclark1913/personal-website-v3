@@ -27,7 +27,13 @@ export const WORK_EXPERIENCE = [
   {
     title: "Software Consultant",
     institution: "ETANA Syria",
-    date: "2023 - 2024",
+    date: "2023 - Present",
+    info: "Remote",
+  },
+  {
+    title: "Open Source Contributor",
+    institution: "Bellingcat",
+    date: "2023 - Present",
     info: "Remote",
   },
   {
@@ -48,6 +54,12 @@ export const WORK_EXPERIENCE = [
     date: "2016 - 2019",
     info: "Amman, Jordan",
   },
+  {
+    title: "Arabic Interpreter",
+    institution: "Health Point Foundation",
+    date: "2015",
+    info: "Mytilini, Greece",
+  }
 ];
 
 export const EDUCATION = [
@@ -58,7 +70,7 @@ export const EDUCATION = [
     info: "Remote",
   },
   {
-    title: "Arabic Language",
+    title: "Arabic Language (BA)",
     institution: "Western Michigan University",
     date: "2013-2016",
     info: "Kalamazoo, MI",
@@ -77,24 +89,24 @@ export const EDUCATION = [
   }
 ]
 
-export const VOLUNTEERING = [
-  {
-    title: "Open Source Contributor",
-    institution: "Bellingcat",
-    date: "2023 - Present",
-    info: "Remote",
-  },
-  {
-    title: "Arabic Interpreter",
-    institution: "Health Point Foundation",
-    date: "2015",
-    info: "Mytilini, Greece",
-  }
-];
+// export const VOLUNTEERING = [
+//   {
+//     title: "Open Source Contributor",
+//     institution: "Bellingcat",
+//     date: "2023 - Present",
+//     info: "Remote",
+//   },
+//   {
+//     title: "Arabic Interpreter",
+//     institution: "Health Point Foundation",
+//     date: "2015",
+//     info: "Mytilini, Greece",
+//   }
+// ];
 
 export const ABOUT_TAB_DATA = [
   {
-    title: "Work Experience",
+    title: "Experience",
     id: "work",
     content: WORK_EXPERIENCE
   },
@@ -102,10 +114,10 @@ export const ABOUT_TAB_DATA = [
     title: "Education",
     id: "education",
     content: EDUCATION
-  },
-  {
-    title: "Volunteering",
-    id: "volunteering",
-    content: VOLUNTEERING
   }
+  // {
+  //   title: "Volunteering",
+  //   id: "volunteering",
+  //   content: VOLUNTEERING
+  // }
 ];
