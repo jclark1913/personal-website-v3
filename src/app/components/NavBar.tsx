@@ -5,12 +5,13 @@ import Link from "next/link";
 import { NAV_LINKS } from "../lib/constants";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import MenuOverlay from "./MenuOverlay";
 
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 border-[#33353F] border">
+    <nav className="fixed top-0 left-0 right-0 z-10 border-[#33353F] border bg-[#161b22] opacity-90">
       <div className="flex container lg:py-4 px-4 py-2 flex-wrap items-center justify-between mx-auto">
         <Link href="/" className="text-2xl text-white font-semibold">
           {"</>"}
@@ -42,6 +43,7 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
+      <div className="md:hidden">{navbarOpen ? <MenuOverlay navLinks={NAV_LINKS} /> : null}</div>
     </nav>
   );
 };
