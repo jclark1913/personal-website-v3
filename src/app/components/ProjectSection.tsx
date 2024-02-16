@@ -1,9 +1,20 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { PROJECTS, PROJECT_BUTTONS } from "../lib/constants";
+import ProjectButton from "./ProjectButton";
 
 const ProjectSection = () => {
+  const [activeFilter, setActiveFilter] = useState("all");
+  const filteredProjects = PROJECTS.filter((p) => {
+    console.log(p.tag);
+    console.log(activeFilter);
+    return p.tag.includes(activeFilter);
+  });
+
+  console.log(filteredProjects);
+  console.log(activeFilter);
+
   return (
     <div
       id="projects"
@@ -12,15 +23,21 @@ const ProjectSection = () => {
       <h1 className="text-4xl font-bold text-white mb-4 text-center">
         Projects
       </h1>
-      <div className="flex align-center justify-center gap-4">
+      <div className="flex flex-row gap-3 items-start justify-center">
         {PROJECT_BUTTONS.map((button, index) => (
-          <button className="border rounded-xl px-4 py-1" key={index}>{button.display}</button>
+          <ProjectButton
+            key={index}
+            selectActiveFilter={() => setActiveFilter(button.tag.toLowerCase())}
+            active={activeFilter === button.tag.toLowerCase()}
+          >
+            {button.display}
+          </ProjectButton>
         ))}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 mt-10">
-        {PROJECTS.map((p) => (
+        {filteredProjects.map((p, index) => (
           <ProjectCard
-            key={p.id}
+            key={index}
             title={p.title}
             description={p.description}
             imgUrl={p.image}
