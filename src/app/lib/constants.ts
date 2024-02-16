@@ -132,7 +132,7 @@ export const PROJECTS = [
     demoUrl: "https://syria-daily-brief.herokuapp.com/",
     repoUrl: "https://github.com/jclark1913/syria-daily-brief",
     pypiUrl: null,
-    tech: ["Python", "Flask", "PostgreSQL", "React", "TypeScript", "TailwindCSS", "Pandas", "BeautifulSoup"]
+    tech: ["Python", "Flask", "PostgreSQL", "React", "Typescript", "TailwindCSS", "Pandas", "BeautifulSoup"]
   },
   {
     id: 2,
@@ -177,6 +177,17 @@ export const PROJECTS = [
     repoUrl: "https://github.com/jclark1913/michigan-facts-ts",
     pypiUrl: null,
     tech: ["Typescript", "NextJS", "Vercel", "Python", "Prisma"]
+  },
+  {
+    id: 5,
+    title: "justinclark.bio",
+    description: "The website you're on right now",
+    image: "images/portfolio.png",
+    tag: ["all", "other"],
+    demoUrl: "https://justinclark.bio/",
+    repoUrl: "https://github.com/jclark1913/personal-website-v3",
+    pypiUrl: null,
+    tech: ["Typescript", "React", "TailwindCSS", "Vercel", "NextJS"]
   }
 ];
 
