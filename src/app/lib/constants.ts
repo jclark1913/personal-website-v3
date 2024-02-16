@@ -22,43 +22,37 @@ export const WORK_EXPERIENCE = [
     title: "Software Engineer",
     institution: "Rootwise, LLC",
     date: "2024 - Present",
-    info: null,
+    info: "Remote",
   },
   {
     title: "Software Consultant",
     institution: "ETANA Syria",
     date: "2023 - 2024",
-    info: null,
+    info: "Remote",
   },
   {
     title: "Software Developer Intern",
     institution: "Rithm School",
     date: "2023",
-    info: null,
+    info: "Remote",
   },
   {
     title: "Senior Analyst",
     institution: "ETANA Syria",
     date: "2019 - 2023",
-    info: null,
+    info: "Amman, Jordan",
   },
   {
-    title: "Journalist and Translator",
-    institution: "Syria Direct, Freelance",
+    title: "Journalist & Translator",
+    institution: "Syria Direct / Freelance",
     date: "2016 - 2019",
-    info: null,
+    info: "Amman, Jordan",
   },
-  {
-    title: "Arabic Interpreter",
-    institution: "Health Point Foundation",
-    date: "2015",
-    info: null,
-  }
 ];
 
 export const EDUCATION = [
   {
-    title: "Full Stack Web Development",
+    title: "Full Stack Software Development",
     institution: "Rithm School",
     date: "2023",
     info: "Remote",
@@ -83,6 +77,21 @@ export const EDUCATION = [
   }
 ]
 
+export const VOLUNTEERING = [
+  {
+    title: "Open Source Contributor",
+    institution: "Bellingcat",
+    date: "2023 - Present",
+    info: "Remote",
+  },
+  {
+    title: "Arabic Interpreter",
+    institution: "Health Point Foundation",
+    date: "2015",
+    info: "Mytilini, Greece",
+  }
+];
+
 export const ABOUT_TAB_DATA = [
   {
     title: "Work Experience",
@@ -93,5 +102,10 @@ export const ABOUT_TAB_DATA = [
     title: "Education",
     id: "education",
     content: EDUCATION
+  },
+  {
+    title: "Volunteering",
+    id: "volunteering",
+    content: VOLUNTEERING
   }
 ];
