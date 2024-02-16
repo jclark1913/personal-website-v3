@@ -3,6 +3,7 @@ import React, { useState, useTransition } from "react";
 import TabButton from "./TabButton";
 import { ABOUT_TAB_DATA } from "../lib/constants";
 import ExperienceCard from "./ExperienceCard";
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 const AboutSection = () => {
   const [activeTab, setActiveTab] = useState("work");
@@ -15,7 +16,10 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 sm:mt-24" id="about">
+    <section
+      className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 sm:mt-24"
+      id="about"
+    >
       <div>
         <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
         <div className="text-justify text-base md:text-xl">
@@ -60,8 +64,14 @@ const AboutSection = () => {
               {tab.title}
             </TabButton>
           ))}
+          <button>
+            <a href="https://justinclark.bio" className="mr-3 font-semibold text-slate-200 hover:text-white flex justify-center items-center">
+              <p>Resume</p>
+              <ArrowUpRightIcon className="ml-1 h-5 w-5" />
+            </a>
+          </button>
         </div>
-        <div className="flex flex-col items-center w-5/6">
+        <div className="flex flex-col items-center w-full lg:w-5/6">
           {isPending ? (
             <div className="text-white">Loading...</div>
           ) : (
