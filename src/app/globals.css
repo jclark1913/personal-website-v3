@@ -2,10 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
+.dark {
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+  --main-background: 22, 27, 34;
+  --header-text: 255, 255, 255;
+  --paragraph-text: 255, 255, 255;
+  --experience-tab: 226, 232, 240;
+  --experience-tab-active: 255, 255, 255;
+}
+
+.light {
+  /* --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+  --main-background: 255, 255, 255;
+  --header-text: 0, 0, 0;
+  --paragraph-text: 0, 0, 0;
+  --experience-tab: 255, 255, 255;
+  --experience-tab-active: 0, 0, 0;
+
 }
 
 @media (prefers-color-scheme: dark) {
