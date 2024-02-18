@@ -22,7 +22,7 @@ const SkillsSection = () => {
         {TECHNOLOGIES.map((tech) => (
           <div
             key={tech.title}
-            className="flex flex-col items-center gap-1 relative group hover:cursor-pointer"
+            className="flex flex-col items-center gap-1 relative group"
           >
             <tech.icon className="size-10 sm:size-12" color={tech.color} />
             <p className="hidden group-hover:block absolute text-black bg-white text-sm px-2 py-1 rounded-md shadow-lg -translate-y-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
