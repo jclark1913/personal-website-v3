@@ -12,11 +12,11 @@ const TabButton: React.FC<TabButtonProps> = ({
   children,
 }) => {
   const buttonStyling = active
-    ? "text-white border-b border-blue-500 "
-    : "text-slate-200";
+    ? "text-headertext border-b-2 border-blue-500 "
+    : "text-experiencetabinactive";
   return (
     <button onClick={selectActiveTab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonStyling}`}>
+      <p className={`mr-3 font-semibold hover:text-headertext ${buttonStyling}`}>
         {children}
       </p>
     </button>

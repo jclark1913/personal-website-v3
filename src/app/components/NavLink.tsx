@@ -8,7 +8,7 @@ interface NavLinkProps {
 
 const NavLink: React.FC<NavLinkProps> = ({ href, title }) => {
   return (
-    <Link href={href} className="block py-2 pl-3 pr-4 text-white">
+    <Link href={href} className="flex py-2 pl-3 pr-4 text-headertext border border-transparent hover:border-b-headertext ">
       {title}
     </Link>
   );

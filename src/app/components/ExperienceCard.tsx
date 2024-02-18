@@ -14,7 +14,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   info,
 }) => {
   return (
-    <div className="flex flex-col border-[#33353F] border rounded-lg p-4 text-sm mt-2">
+    <div className="text-paragraphtext flex flex-col border-normalborder hover:border-hoverborder border rounded-lg p-4 text-sm mt-2">
       <div className="flex flex-col md:flex-row justify-between">
         <div className="font-bold">{title}</div>
         <div>{institution}</div>
