@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { HERO_BLURB } from "../lib/constants";
 import SOCIALS from "../lib/Socials";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -9,7 +12,11 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-12 mx-0 lg:mx-10">
         <div className="col-span-7">
           <h1 className="text-headertext mb-4 text-4xl sm:text-6xl lg:text-7xl sm:text-left text-center">
-            Hi. I'm <b className="font-bold">Justin Clark.</b>
+            Hi. I'm{" "}
+            <TypeAnimation
+              className="font-extrabold"
+              sequence={["Justin Clark", 1500]}
+            />
           </h1>
           <p className="text-paragraphtext text-lg lg:text-xl text-justify pr-2">
             {HERO_BLURB}
