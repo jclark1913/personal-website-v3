@@ -16,17 +16,17 @@ export const ABOUT_BLURB = (
     <p className="mb-2">
       {" "}
       Some of my recent open source projects include a{" "}
-      <a href="https://github.com/bellingcat/wayback-google-analytics">
+      <a className="underline hover:text-headertext text-experiencetabinactive" href="https://github.com/bellingcat/wayback-google-analytics">
         tool
       </a>{" "}
       for identifying disinformation networks (read my Bellingcat article{" "}
-      <a href="https://www.bellingcat.com/resources/2024/01/09/using-the-wayback-machine-and-google-analytics-to-uncover-disinformation-networks/">
+      <a className="underline hover:text-headertext text-experiencetabinactive" href="https://www.bellingcat.com/resources/2024/01/09/using-the-wayback-machine-and-google-analytics-to-uncover-disinformation-networks/">
         here
       </a>
-      ) and an <a href="#syria-daily-brief">AI-powered web scraper</a> to
-      monitor Syrian media. But I tinker a lot, so follow me on{" "}
-      <a href="https://github.com/jclark1913">github</a> to see what I'm working
-      on.
+      ) and an <a className="underline hover:text-headertext text-experiencetabinactive" href="#syria-daily-brief">AI-powered web scraper</a> to
+      monitor Syrian media. I'm always looking at new projects, so follow me on{" "}
+      <a className="underline hover:text-headertext text-experiencetabinactive" href="https://github.com/jclark1913">github</a> to see what I'm working
+      on currently
     </p>
   </>
 );
