@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { SOCIALS } from "../lib/Socials";
+import { TypeAnimation } from "react-type-animation";
 
 const ContactSection = () => {
   return (
@@ -39,9 +41,10 @@ const ContactSection = () => {
           ))}
         </div>
       </div>
-      <p className="text-center text-xl text-paragraphtext my-12">
-        Thanks for visiting!
-      </p>
+      <TypeAnimation
+        className="text-center text-xl text-paragraphtext pt-4 my-12"
+        sequence={["Thanks for visiting!", 1500]}
+      />
     </div>
   );
 };
