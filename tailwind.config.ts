@@ -15,6 +15,9 @@ const config: Config = {
         paragraphtext: "rgba(var(--paragraph-text))",
         experiencetab: "rgba(var(--experience-tab))",
         experiencetabactive: "rgba(var(--experience-tab-active))",
+        experiencetabinactive:"rgba(var(--experience-tab-inactive))",
+        normalborder: "rgba(var(--normal-border))",
+        hoverborder: "rgba(var(--hover-border))",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
