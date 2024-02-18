@@ -126,13 +126,13 @@ export const PROJECTS = [
   {
     id: 1,
     title: "Syria Daily Brief",
-    description: "A web scraper that monitors Syrian media and sends a daily email with the top headlines.",
+    description: "An AI-empowered web scraper for monitoring Syrian media.",
     image: "images/syria-daily-brief.png",
     tag: ["all", "fullstack"],
-    demoUrl: "https://syria-daily-brief.herokuapp.com/",
+    demoUrl: null,
     repoUrl: "https://github.com/jclark1913/syria-daily-brief",
     pypiUrl: null,
-    tech: ["Python", "Flask", "PostgreSQL", "React", "Typescript", "TailwindCSS", "Pandas", "BeautifulSoup"]
+    tech: ["Python", "Flask", "PostgreSQL", "React", "Typescript", "TailwindCSS", "Pandas", "BeautifulSoup", "OpenAI"]
   },
   {
     id: 2,
@@ -151,7 +151,7 @@ export const PROJECTS = [
     description: "A full stack job board app",
     image: "images/jobhunter.png",
     tag: ["all", "fullstack"],
-    demoUrl: "https://jobhunter-app.herokuapp.com/",
+    demoUrl: "http://jobhunter.justinclark.bio/",
     repoUrl: "https://github.com/jclark1913/jobhunter",
     pypiUrl: null,
     tech: ["Express", "Javascript", "PostgreSQL", "React"]
@@ -162,7 +162,7 @@ export const PROJECTS = [
     description: "A full stack clone of another, somehow sillier bird app",
     image: "images/silly-bird.png",
     tag: ["all", "fullstack"],
-    demoUrl: "https://silly-bird.herokuapp.com/",
+    demoUrl: "https://sillybird.justinclark.bio/",
     repoUrl: "https://github.com/jclark1913/silly-bird",
     pypiUrl: null,
     tech: ["Python", "Flask", "PostgreSQL", "SQLAlchemy", "JQuery", "Bootstrap"]
@@ -173,7 +173,7 @@ export const PROJECTS = [
     description: "A discord chatbot and serverless API that nobody asked for",
     image: "images/michigan-facts.jpeg",
     tag: ["all", "other"],
-    demoUrl: null,
+    demoUrl: "https://michigan-facts-ts.vercel.app/facts",
     repoUrl: "https://github.com/jclark1913/michigan-facts-ts",
     pypiUrl: null,
     tech: ["Typescript", "NextJS", "Vercel", "Python", "Prisma"]
