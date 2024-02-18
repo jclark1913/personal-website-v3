@@ -9,7 +9,7 @@ export const NAV_LINKS = [
   },
   {
     title: "Resume",
-    path: "/",
+    path: "/assets/resume.pdf",
   },
   {
     title: "Contact",
