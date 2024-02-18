@@ -14,7 +14,7 @@ const NavBar = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 border-normalborder border bg-sitebackground opacity-90">
+    <nav className="fixed top-0 left-0 right-0 z-10 border-normalborder border-b bg-sitebackground opacity-90">
       <div className="flex container lg:py-4 px-4 py-2 flex-wrap items-center justify-between mx-auto">
         <Link href="/" className="text-2xl text-headertext font-semibold">
           {"</>"}
