@@ -16,7 +16,9 @@ const TabButton: React.FC<TabButtonProps> = ({
     : "text-experiencetabinactive";
   return (
     <button onClick={selectActiveTab}>
-      <p className={`mr-3 font-semibold hover:text-headertext ${buttonStyling}`}>
+      <p
+        className={`mr-3 font-semibold hover:text-headertext ${buttonStyling}`}
+      >
         {children}
       </p>
     </button>

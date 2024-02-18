@@ -2,13 +2,13 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
 interface ThemeContextType {
-    theme: string;
-    toggleTheme: () => void;
+  theme: string;
+  toggleTheme: () => void;
 }
 
 export const ThemeContext = createContext<ThemeContextType>({
-    theme: "dark",
-    toggleTheme: () => {},
+  theme: "dark",
+  toggleTheme: () => {},
 });
 
 export const useTheme = () => {

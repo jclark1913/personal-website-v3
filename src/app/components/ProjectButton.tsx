@@ -16,7 +16,9 @@ const ProjectButton: React.FC<ProjectButtonProps> = ({
     : "text-experiencetabinactive";
   return (
     <button onClick={selectActiveFilter}>
-      <p className={`mr-3 font-semibold hover:text-experiencetabactive ${buttonStyling}`}>
+      <p
+        className={`mr-3 font-semibold hover:text-experiencetabactive ${buttonStyling}`}
+      >
         {children}
       </p>
     </button>
