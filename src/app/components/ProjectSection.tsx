@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import { PROJECTS, PROJECT_BUTTONS } from "../lib/constants";
 import ProjectButton from "./ProjectButton";
 import { SiGithub } from "react-icons/si";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import { motion, useInView } from "framer-motion";
 
 const ProjectSection = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -14,8 +15,20 @@ const ProjectSection = () => {
     return p.tag.includes(activeFilter);
   });
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
-    <div
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 100 }}
+      transition={{ duration: 1 }}
       id="projects"
       className="flex flex-col align-middle justify-center mt-24"
     >
@@ -33,20 +46,29 @@ const ProjectSection = () => {
           </ProjectButton>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 mt-10">
+      <ul className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 mt-10">
         {filteredProjects.map((p, index) => (
-          <ProjectCard
+          <motion.li
             key={index}
-            title={p.title}
-            description={p.description}
-            imgUrl={p.image}
-            repoUrl={p.repoUrl}
-            demoUrl={p.demoUrl}
-            pypiUrl={p.pypiUrl}
-            tech={p.tech}
-          />
+            className="grid"
+            variants={cardVariants}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            transition={{ duration: 0.5, delay: index * 0.5}}
+
+            >
+            <ProjectCard
+              title={p.title}
+              description={p.description}
+              imgUrl={p.image}
+              repoUrl={p.repoUrl}
+              demoUrl={p.demoUrl}
+              pypiUrl={p.pypiUrl}
+              tech={p.tech}
+            />
+          </motion.li>
         ))}
-      </div>
+      </ul>
       <div className="flex flex-row justify-center align-middle items-center">
         <a
           href="https://github.com/jclark1913"
@@ -60,7 +82,7 @@ const ProjectSection = () => {
           </div>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
