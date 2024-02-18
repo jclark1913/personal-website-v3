@@ -4,7 +4,9 @@ import TECHNOLOGIES from "../lib/TechStack";
 const SkillsSection = () => {
   return (
     <div className="">
-      <h2 className="text-center text-md sm:text-lg">My tech stack:</h2>
+      <h2 className="text-center text-headertext text-md sm:text-lg">
+        My tech stack:
+      </h2>
       <div className="grid gap-4 mt-4 grid-cols-4 md:grid-cols-6 lg:grid-cols-8 sm:w-1/2 sm:mx-auto">
         {TECHNOLOGIES.map((tech) => (
           <div
