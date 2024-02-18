@@ -13,7 +13,8 @@
   --experience-tab-active: 255, 255, 255;
   --experience-tab-inactive: 226, 232, 240;
   --normal-border: 51, 53, 63;
-  --hover-border: 255, 255, 255;
+  --hover-border: 150, 150, 150;
+  --footer-text: 100, 116, 139;
 
 }
 
@@ -29,6 +30,7 @@
   --experience-tab-inactive: 81, 81, 81;
   --normal-border: 51, 53, 63;
   --hover-border: 150, 150, 150;
+  --footer-text: 100, 116, 139;
 
 }
 
