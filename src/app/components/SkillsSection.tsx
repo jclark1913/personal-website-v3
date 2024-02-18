@@ -1,9 +1,20 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import TECHNOLOGIES from "../lib/TechStack";
+import { motion, useInView } from "framer-motion";
 
 const SkillsSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 100 }}
+      transition={{ duration: 1 }}
+      className=""
+    >
       <h2 className="text-center text-headertext text-md sm:text-lg">
         My tech stack:
       </h2>
@@ -20,7 +31,7 @@ const SkillsSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
