@@ -197,11 +197,11 @@ export const PROJECT_BUTTONS = [
     tag: "all"
   },
   {
-    display: "Full Stack Apps",
+    display: "Full Stack",
     tag: "fullstack"
   },
   {
-    display: "Tools & Other Projects",
+    display: "Tools & Other",
     tag: "other"
   }
 ];
