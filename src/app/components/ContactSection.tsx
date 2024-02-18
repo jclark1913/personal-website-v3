@@ -12,14 +12,14 @@ const ContactSection = () => {
       <div className="flex flex-col sm:flex-row place-items-stretch gap-8 text-paragraphtext">
         <div className="flex flex-col gap-4">
           <h2 className="text-left text-md font-extrabold sm:text-3xl">
-            Let's Connect:
+            Let&apos;s Connect:
           </h2>
           <div className="flex flex-col gap-3 sm:w-full text-justify">
             <p className="sm:text-2xl">
-              I'm currently looking for new opportunities and open to new roles.
+              I&apos;m currently looking for new opportunities and open to new roles.
             </p>
             <p className="">
-              My inbox is open - send me a message if you'd like to ask a
+              My inbox is open - send me a message if you&apos;d like to ask a
               question, connect or set up a time to chat.
             </p>
           </div>

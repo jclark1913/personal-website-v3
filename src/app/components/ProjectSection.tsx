@@ -10,8 +10,6 @@ import { motion, useInView } from "framer-motion";
 const ProjectSection = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const filteredProjects = PROJECTS.filter((p) => {
-    console.log(p.tag);
-    console.log(activeFilter);
     return p.tag.includes(activeFilter);
   });
 

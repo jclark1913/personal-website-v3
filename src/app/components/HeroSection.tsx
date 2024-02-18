@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-12 mx-0 lg:mx-10">
         <div className="col-span-7">
           <h1 className="text-headertext mb-4 text-4xl sm:text-6xl lg:text-7xl sm:text-left text-center">
-            Hi. I'm{" "}
+            Hi. I&apos;m{" "}
             <TypeAnimation
               className="font-extrabold"
               sequence={["Justin Clark", 1500]}
