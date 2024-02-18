@@ -13,7 +13,7 @@ export const SOCIALS = [
   },
   {
     title: "Twitter",
-    icon: Icons.SiTwitter,
+    icon: Icons.SiX,
     link: "https://twitter.com/justinclarkjo",
   },
   {
@@ -22,3 +22,5 @@ export const SOCIALS = [
     link: "mailto: jclarksummit@gmail.com",
   },
 ];
+
+export default SOCIALS;
