@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { HERO_BLURB } from "../lib/constants";
+import SOCIALS from "../lib/Socials";
 
 const HeroSection = () => {
   return (
@@ -10,18 +12,16 @@ const HeroSection = () => {
             Hi. I'm <b className="font-bold">Justin Clark.</b>
           </h1>
           <p className="text-paragraphtext text-lg lg:text-xl text-justify pr-2">
-            I'm a software engineer, professional translator, and consultant
-            with eight years of experience working in journalism and conflict
-            analysis. I'm passionate about OSINT tools, solving neat problems
-            and using tech as a force for good.
+            {HERO_BLURB}
           </p>
-          <div className="mt-3">
-            <button className="px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black border-black border w-full sm:w-fit">
-              Github
-            </button>
-            <button className="px-6 py-3 rounded-full bg-[#161b22] hover:bg-slate-200 hover:text-black text-white border-white border w-full sm:w-fit">
-              Contact
-            </button>
+          <div className="sm:ml-4 flex flex-row align-center justify-center sm:justify-start gap-4 mt-4">
+            {SOCIALS.map((social, index) => (
+              <div key={index}>
+                <a href={social.link} target="_blank">
+                  <social.icon className="size-7 sm:size-8 text-experiencetabinactive hover:text-headertext" />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
         <div className="col-span-5 flex mt-24 place-self-center sm:place-self-end lg:mt-0">
