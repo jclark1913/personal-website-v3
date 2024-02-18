@@ -18,6 +18,7 @@ const config: Config = {
         experiencetabinactive:"rgba(var(--experience-tab-inactive))",
         normalborder: "rgba(var(--normal-border))",
         hoverborder: "rgba(var(--hover-border))",
+        footertext: "rgba(var(--footer-text))",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
