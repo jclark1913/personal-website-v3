@@ -12,11 +12,11 @@ const ProjectButton: React.FC<ProjectButtonProps> = ({
   children,
 }) => {
   const buttonStyling = active
-    ? "text-white border-b border-blue-500 "
-    : "text-slate-200";
+    ? "text-experiencetabactive border-b-2 border-blue-500 "
+    : "text-experiencetabinactive";
   return (
     <button onClick={selectActiveFilter}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonStyling}`}>
+      <p className={`mr-3 font-semibold hover:text-experiencetabactive ${buttonStyling}`}>
         {children}
       </p>
     </button>

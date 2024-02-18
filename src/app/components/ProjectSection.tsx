@@ -12,15 +12,12 @@ const ProjectSection = () => {
     return p.tag.includes(activeFilter);
   });
 
-  console.log(filteredProjects);
-  console.log(activeFilter);
-
   return (
     <div
       id="projects"
       className="flex flex-col align-middle justify-center mt-24"
     >
-      <h1 className="text-4xl font-bold text-white mb-4 text-center">
+      <h1 className="text-4xl font-bold text-headertext mb-4 text-center">
         Projects
       </h1>
       <div className="flex flex-row gap-3 items-start justify-center">

@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardsProps> = ({
   tech,
 }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col border border-normalborder rounded-lg hover:border-hoverborder">
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover" }}
@@ -53,14 +53,14 @@ const ProjectCard: React.FC<ProjectCardsProps> = ({
           ) : null}
         </div>
       </div>
-      <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 flex-1 grid">
+      <div className="text-headertext rounded-b-xl bg-sitebackground py-6 px-4 flex-1 grid">
         <h5 className="text-xl font-semibold mb-2 self-start">{title}</h5>
-        <p className="text-[#ADB7BE] self-start">{description}</p>
+        <p className="text-experiencetabinactive self-start">{description}</p>
         <div className="flex flex-row flex-auto flex-wrap pt-2 gap-1 self-end">
           {tech.map((t) => (
             <span
               key={t}
-              className="text-xs text-[#ADB7BE] border border-slate-200 border-1 border-opacity-45 rounded-md px-2 bg-[#161b22]"
+              className="text-xs text-paragraphtext border border-normalborder border-1 border-opacity-45 rounded-md px-2 bg-sitebackground"
             >
               {t}
             </span>
