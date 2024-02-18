@@ -5,7 +5,7 @@ import { ABOUT_TAB_DATA } from "../lib/constants";
 import ExperienceCard from "./ExperienceCard";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import SkillsSection from "./SkillsSection";
-import {ABOUT_BLURB} from "../lib/AboutBlurb"
+import { ABOUT_BLURB } from "../lib/AboutBlurb";
 
 const AboutSection = () => {
   const [activeTab, setActiveTab] = useState("work");
