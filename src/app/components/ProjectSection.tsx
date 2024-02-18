@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { PROJECTS, PROJECT_BUTTONS } from "../lib/constants";
 import ProjectButton from "./ProjectButton";
+import { SiGithub } from "react-icons/si";
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 const ProjectSection = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -44,6 +46,19 @@ const ProjectSection = () => {
             tech={p.tech}
           />
         ))}
+      </div>
+      <div className="flex flex-row justify-center align-middle items-center">
+        <a
+          href="https://github.com/jclark1913"
+          className="text-experiencetabinactive hover:text-headertext flex flex-row items-center"
+          target="_blank"
+        >
+          <div className="flex justify-center mt-8 items-center border border-normalborder hover:border-headertext p-2 rounded-lg">
+            <p className="text-headertext mr-2">See more on github</p>{" "}
+            <SiGithub className="size-5" />
+            <ArrowUpRightIcon className="ml-1 h-5 w-5" />
+          </div>
+        </a>
       </div>
     </div>
   );
