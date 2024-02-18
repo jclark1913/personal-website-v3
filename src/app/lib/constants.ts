@@ -205,3 +205,5 @@ export const PROJECT_BUTTONS = [
     tag: "other"
   }
 ];
+
+export const HERO_BLURB = "I'm a software engineer, professional translator, and consultant with eight years of experience working in journalism and conflict analysis. I'm passionate about OSINT tools, solving neat problems and using tech as a force for good.";
