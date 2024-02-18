@@ -6,10 +6,10 @@ const HeroSection = () => {
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12 mx-0 lg:mx-10">
         <div className="col-span-7">
-          <h1 className="text-white mb-4 text-4xl sm:text-6xl lg:text-7xl sm:text-left text-center">
+          <h1 className="text-headertext mb-4 text-4xl sm:text-6xl lg:text-7xl sm:text-left text-center">
             Hi. I'm <b className="font-bold">Justin Clark.</b>
           </h1>
-          <p className="text-[#888888] text-lg lg:text-xl text-justify pr-2">
+          <p className="text-paragraphtext text-lg lg:text-xl text-justify pr-2">
             I'm a software engineer, professional translator, and consultant
             with eight years of experience working in journalism and conflict
             analysis. I'm passionate about OSINT tools, solving neat problems
@@ -24,7 +24,7 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="col-span-5 flex mt-4 place-self-center sm:place-self-end lg:mt-0">
+        <div className="col-span-5 flex mt-24 place-self-center sm:place-self-end lg:mt-0">
           <Image
             className="rounded-full"
             src="/images/hero-image.jpeg"
