@@ -23,10 +23,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
         <div>{date}</div>
         <div className="hidden md:flex">{info ? info : ""}</div>
       </div>
-      {/* <div className="flex flex-row justify-between md:hidden">
-        <div>TEST</div>
-        <div>TEST</div>
-      </div> */}
     </div>
   );
 };
