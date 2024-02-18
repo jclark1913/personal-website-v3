@@ -19,17 +19,24 @@ const NavBar = () => {
         <Link href="/" className="text-2xl text-headertext font-semibold">
           {"</>"}
         </Link>
-        <div className="block md:hidden">
+        <div className="flex flex-row gap-3 md:hidden">
+          <button onClick={toggleTheme}>
+            {theme === "dark" ? (
+              <MoonIcon className="text-experiencetabinactive hover:text-headertext h-6 w-6" />
+            ) : (
+              <SunIcon className="text-experiencetabinactive hover:text-headertext h-6 w-6" />
+            )}
+          </button>
           {!navbarOpen ? (
             <button
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-experiencetabinactive text-experiencetabinactive hover:text-headertext hover:border-headertext"
               onClick={() => setNavbarOpen(true)}
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
             <button
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-experiencetabinactive text-experiencetabinactive hover:text-headertext hover:border-headertext"
               onClick={() => setNavbarOpen(false)}
             >
               <XMarkIcon className="h-5 w-5" />
@@ -46,9 +53,9 @@ const NavBar = () => {
             <li className="flex flex-row items-center">
               <button onClick={toggleTheme}>
                 {theme === "dark" ? (
-                  <MoonIcon className="text-headertext h-6 w-6" />
+                  <MoonIcon className="text-experiencetabinactive hover:text-headertext h-6 w-6" />
                 ) : (
-                  <SunIcon className="text-headertext h-6 w-6" />
+                  <SunIcon className="text-experiencetabinactive hover:text-headertext h-6 w-6" />
                 )}
               </button>
             </li>
