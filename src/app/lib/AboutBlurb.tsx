@@ -1,7 +1,7 @@
 export const ABOUT_BLURB = (
   <>
     <p className="mb-2 ">
-      I'm a full stack software developer and technical consultant based in
+      I&apos;m a full stack software developer and technical consultant based in
       Michigan. Prior to moving back to my home state in 2022, I lived for more
       than seven years in the Middle East where I worked in journalism, analysis
       and translation.
@@ -9,7 +9,7 @@ export const ABOUT_BLURB = (
 
     <p className="mb-2">
       Today, most of my work is focused on developing software aimed at boosting
-      the capacity of researchers and analysts. I'm also on the lookout for
+      the capacity of researchers and analysts. &apos;m also on the lookout for
       full-time software engineering roles.
     </p>
 
@@ -24,8 +24,8 @@ export const ABOUT_BLURB = (
         here
       </a>
       ) and an <a className="underline hover:text-headertext text-experiencetabinactive" href="#syria-daily-brief">AI-powered web scraper</a> to
-      monitor Syrian media. I'm always looking at new projects, so follow me on{" "}
-      <a className="underline hover:text-headertext text-experiencetabinactive" href="https://github.com/jclark1913">github</a> to see what I'm working
+      monitor Syrian media. &apos;m always looking at new projects, so follow me on{" "}
+      <a className="underline hover:text-headertext text-experiencetabinactive" href="https://github.com/jclark1913">github</a> to see what I&apos;m working
       on currently
     </p>
   </>
