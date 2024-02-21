@@ -9,7 +9,7 @@ export const ABOUT_BLURB = (
 
     <p className="mb-2">
       Today, most of my work is focused on developing software aimed at boosting
-      the capacity of researchers and analysts. &apos;m also on the lookout for
+      the capacity of researchers and analysts. I&apos;m also on the lookout for
       full-time software engineering roles.
     </p>
 
