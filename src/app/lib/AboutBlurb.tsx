@@ -23,8 +23,8 @@ export const ABOUT_BLURB = (
       <a className="underline hover:text-headertext text-experiencetabinactive" href="https://www.bellingcat.com/resources/2024/01/09/using-the-wayback-machine-and-google-analytics-to-uncover-disinformation-networks/">
         here
       </a>
-      ) and an <a className="underline hover:text-headertext text-experiencetabinactive" href="#syria-daily-brief">AI-powered web scraper</a> to
-      monitor Syrian media. &apos;m always looking at new projects, so follow me on{" "}
+      ) and an <a className="underline hover:text-headertext text-experiencetabinactive" href="https://github.com/jclark1913/syria-daily-brief">AI-powered web scraper</a> to
+      monitor Syrian media. I&apos;m always looking at new projects, so follow me on{" "}
       <a className="underline hover:text-headertext text-experiencetabinactive" href="https://github.com/jclark1913">github</a> to see what I&apos;m working
       on currently
     </p>
