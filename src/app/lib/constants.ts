@@ -154,7 +154,7 @@ export const PROJECTS = [
     demoUrl: "http://jobhunter.justinclark.bio/",
     repoUrl: "https://github.com/jclark1913/jobhunter",
     pypiUrl: null,
-    tech: ["Express", "Javascript", "PostgreSQL", "React"]
+    tech: ["Express", "Typescript", "PostgreSQL", "React"]
   },
   {
     id: 4,
