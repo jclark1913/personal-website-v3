@@ -11,12 +11,12 @@
 <br />
 <div align="center">
   <a href="https://github.com/jclark1913/personal-website-v3">
-    <img src="public/images/portfolio.png" alt="Logo" width="80" height="80">
+    <img src="public/images/portfolio.png" alt="Logo" width="500" height="500">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Portfolio Website</h3>
   <p align="center">
-    project_description
+    A lightweight landing page in Next & Typescript
     <br />
     <a href="https://github.com/jclark1913/personal-website-v3"><strong>Explore the docs »</strong></a>
     <br />
@@ -60,9 +60,9 @@ This is my personal website that I put together with Next, React, Typescript and
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![TypeScript][TypeScript]][TypeScript-url]
+[![Next][Next.js]][Next-url]
+[![React][React.js]][React-url]
+[![TypeScript][TypeScript]][TypeScript-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +95,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Justin Clark - [@twitter_handle](https://twitter.com/JustinClarkJO) - jclarksummit at gmail dot com
 
 Project Link: [https://github.com/jclark1913/personal-website-v3](https://github.com/jclark1913/personal-website-v3)
 
