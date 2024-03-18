@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/jclark1913/personal-website-v3">
-    <img src="public/images/portfolio.png" alt="Logo" width="500" height="500">
+    <img src="public/images/portfolio.png" alt="Logo" height="500">
   </a>
 
 <h3 align="center">Portfolio Website</h3>
