@@ -95,7 +95,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Justin Clark - [@twitter_handle](https://twitter.com/JustinClarkJO) - jclarksummit at gmail dot com
+Justin Clark - [@JustinClarkJO](https://twitter.com/JustinClarkJO) - jclarksummit at gmail dot com
 
 Project Link: [https://github.com/jclark1913/personal-website-v3](https://github.com/jclark1913/personal-website-v3)
 
