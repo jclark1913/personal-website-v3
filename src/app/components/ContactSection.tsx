@@ -14,7 +14,7 @@ const ContactSection = () => {
           <h2 className="text-left text-md font-extrabold sm:text-3xl">
             Let&apos;s Connect:
           </h2>
-          <div className="flex flex-col gap-3 sm:w-full text-justify">
+          <div className="flex flex-col gap-3 sm:w-full text-justify sm:text-left">
             <p className="sm:text-2xl">
               I&apos;m currently looking for new opportunities and open to new roles.
             </p>
